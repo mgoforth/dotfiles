@@ -5,6 +5,10 @@
 
 ;; (ido-mode t) ;; this started pissing me off when using Tramp
 
+;; Rinari mode: http://rinari.rubyforge.org/
+(add-to-list 'load-path "~/src/rinari")
+(require 'rinari)
+
 ;; ri mode
 (add-to-list 'load-path "~/.emacs_modes/yari")
 (require 'yari)
@@ -36,6 +40,8 @@
 (global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "M-r") 'replace-string)
 (global-set-key (kbd "M-h") 'yari)
+(global-set-key (kbd "M-+") 'text-scale-increase)
+(global-set-key (kbd "M-_") 'text-scale-decrease)
 
 ;; nxhtml mode
 ;; (add-to-list 'load-path "~/.emacs_modes/nxhtml")
